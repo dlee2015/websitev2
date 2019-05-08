@@ -1,0 +1,17 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "My first website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Lee",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.19.0",
+    "view-engine": "^1.1.1"
+  }
+}
