@@ -9,9 +9,6 @@ app.get("/", function(req, res){
     res.render("index");
 })
 
-app.get("/home", function(req, res){
-    res.render("index");
-})
 
 
 
@@ -29,6 +26,4 @@ app.get("/home", function(req, res){
 
 
 
-
-
-app.listen(4000);
+app.listen(process.env.PORT);
