@@ -5,10 +5,8 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 
-
-
 app.get("/", function(req, res){
-    res.redirect("/home");
+    res.render("index");
 })
 
 app.get("/home", function(req, res){
