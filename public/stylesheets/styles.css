@@ -9,7 +9,7 @@ section{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
+    width: auto;
     height: 100vh;
     scroll-snap-align: center;
 }
