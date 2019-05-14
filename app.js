@@ -13,4 +13,8 @@ app.get('/about', function(req, res){
     res.render('about');
 })
 
+app.get('/projects', function(req, res){
+    res.render('projects');
+})
+
 app.listen(process.env.PORT  || 4000);

@@ -1,6 +1,7 @@
 body {
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .super-container{
@@ -9,6 +10,7 @@ body {
     width: 100vw;
     padding-bottom: 10rem;
     position: relative;
+    overflow-y: hidden;
 }
 
 hr {
@@ -100,6 +102,10 @@ hr {
 } 
 
 @media(max-width: 400px){
+    body{
+        overflow: scroll;
+    }
+
     #portrait{
         width: 100%;
     }
