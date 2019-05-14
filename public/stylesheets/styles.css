@@ -68,14 +68,14 @@ hr {
 }
 
 .footer{
-    position: absolute;
+    position: relative;
     text-align: center;
     width: 100%;
     font-size: 3rem;
     margin: 2rem 0;
 }
 
-.opener{
+.content .opener{
     font-size: 6rem;
     font-family: 'Indie Flower', cursive;
 }
@@ -83,4 +83,24 @@ hr {
 .highlight1{
     font-weight: bold;
     color: blueviolet;
+}
+
+#portrait{
+    border-radius: 50%;
+    margin-bottom: 5rem;
+}
+
+.row .content {
+    font-family: 'Indie Flower', cursive;
+}
+
+.content p{
+    font-size: 1.75rem;
+    font-family: 'Lato', sans-serif;
+} 
+
+@media(max-width: 400px){
+    #portrait{
+        width: 100%;
+    }
 }
