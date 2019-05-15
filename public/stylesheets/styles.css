@@ -1,17 +1,17 @@
 body {
     height: 100%;
     position: relative;
-    overflow: hidden;
-    height: 100vh;
+    overflow: visible;
 }
 
 .super-container{
     font-family: 'Merriweather', serif;
     display: block;
-    width: 100vw;
-    padding-bottom: 10rem;
+    width: 100%;
     position: relative;
     overflow-y: hidden;
+    height: 100%;
+    margin-bottom: 10rem;
 }
 
 hr {
@@ -109,5 +109,55 @@ hr {
 
     #portrait{
         width: 100%;
+    }
+}
+
+.fade-in{
+    animation: fadeIn 1.5s ease-in;
+    -webkit-animation: fadeIn ease 1.5s;
+    -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+    -ms-animation: fadeIn ease 1.5s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkite-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-ms-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
