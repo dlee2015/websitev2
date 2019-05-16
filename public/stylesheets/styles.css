@@ -140,13 +140,17 @@ hr {
         justify-content: flex-end;
     }
 
+    .mobile-menu{
+        display:none;
+    }
+
 	#navbar-mobile {
 		display: block;
     }
 
 	#portrait {
 		width: 100%;
-	}
+    }
     
 }
 
