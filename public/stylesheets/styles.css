@@ -118,14 +118,36 @@ hr {
 	display: none;
 }
 
+#navbar-mobile {
+	display: none;
+}
+
 @media (max-width: 400px) {
-	#portrait {
-		width: 100%;
-	}
+    hr {
+        margin: 0;
+    }
 
 	.mobile-project {
 		display: inline;
 	}
+
+	.navbar {
+		display: none;
+    }
+    
+    .navbar-links{
+        display:flex;
+        justify-content: flex-end;
+    }
+
+	#navbar-mobile {
+		display: block;
+    }
+
+	#portrait {
+		width: 100%;
+	}
+    
 }
 
 .fade-in {
