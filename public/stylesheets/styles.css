@@ -95,10 +95,6 @@ hr {
 	color: blueviolet;
 }
 
-#portrait {
-	border-radius: 50%;
-	margin-bottom: 5rem;
-}
 
 .row .content {
 	font-family: 'Indie Flower', cursive;
@@ -120,6 +116,11 @@ hr {
 
 #navbar-mobile {
 	display: none;
+}
+
+#portrait {
+	border-radius: 50%;
+	margin-bottom: 5rem;
 }
 
 @media (max-width: 400px) {

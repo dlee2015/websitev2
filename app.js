@@ -1,5 +1,6 @@
 const express = require('express'),
-      app = express();
+      app = express(),
+      bodyParser = require('body-parser');
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -16,5 +17,8 @@ app.get('/about', function(req, res){
 app.get('/projects', function(req, res){
     res.render('projects');
 })
+
+
+
 
 app.listen(process.env.PORT  || 4000);
