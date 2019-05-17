@@ -28,6 +28,13 @@ hr {
 a.project-title {
 	font-size: 3rem;
 	font-family: 'Indie Flower', cursive;
+	text-decoration: none;
+	color: lightblue;
+}
+
+a.project-title:hover {
+	color: #808080;
+	transition: 0.15s ease-in-out;
 }
 
 .navbar {
@@ -63,7 +70,7 @@ a.project-title {
 }
 
 .navbar-links a:hover {
-	color: lightblue;
+	color: #808080;
 	transition: 0.15s ease-in-out;
 }
 
