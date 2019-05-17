@@ -25,6 +25,11 @@ hr {
 	margin: 10;
 }
 
+a.project-title {
+	font-size: 3rem;
+	font-family: 'Indie Flower', cursive;
+}
+
 .navbar {
 	margin: 2rem 0 0 0;
 	overflow: hidden;
@@ -71,12 +76,6 @@ hr {
 	text-align: center;
 }
 
-#avatar {
-	width: 100%;
-	display: block;
-	margin: auto;
-}
-
 .footer {
 	position: relative;
 	text-align: center;
@@ -95,6 +94,10 @@ hr {
 	color: blueviolet;
 }
 
+.row div {
+	text-align: center;
+	align-content: center;
+}
 
 .row .content {
 	font-family: 'Indie Flower', cursive;
@@ -105,13 +108,31 @@ hr {
 	font-family: 'Lato', sans-serif;
 }
 
-.project-list {
+.project-box {
+	height: 35vh;
+	overflow: auto;
+	border: 1px solid lightgrey;
+}
+
+/* .project-list {
 	text-align: center;
 	align-content: center;
-}
+	justify-content: center;
+} */
 
 .mobile-project {
 	display: none;
+}
+
+.row#projects-page {
+	display: flex;
+	align-items: center;
+}
+
+#avatar {
+	width: 100%;
+	display: block;
+	margin: auto;
 }
 
 #navbar-mobile {
@@ -124,9 +145,9 @@ hr {
 }
 
 @media (max-width: 400px) {
-    hr {
-        margin: 0;
-    }
+	hr {
+		margin: 0;
+	}
 
 	.mobile-project {
 		display: inline;
@@ -134,25 +155,29 @@ hr {
 
 	.navbar {
 		display: none;
-    }
-    
-    .navbar-links{
-        display:flex;
-        justify-content: flex-end;
-    }
+	}
 
-    .mobile-menu{
-        display:none;
-    }
+	.navbar-links {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.row#projects-page {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.mobile-menu {
+		display: none;
+	}
 
 	#navbar-mobile {
 		display: block;
-    }
+	}
 
 	#portrait {
 		width: 100%;
-    }
-    
+	}
 }
 
 .fade-in {
