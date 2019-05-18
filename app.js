@@ -19,12 +19,6 @@ const newProject = {
 	About: 'Bello World'
 };
 
-Projects.create(newProject, err => {
-	if (err) {
-		console.log(err);
-	}
-});
-
 app.get('/', function(req, res) {
 	res.render('index');
 });
