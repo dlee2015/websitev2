@@ -151,6 +151,11 @@ a.project-title:hover {
 	margin-bottom: 5rem;
 }
 
+#project-name {
+	text-decoration: underline;
+	color: rgb(2, 51, 97);
+}
+
 @media (max-width: 400px) {
 	hr {
 		margin: 0;
