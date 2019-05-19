@@ -1,3 +1,5 @@
+/* HTML TAGS */
+
 body {
 	height: 100%;
 	position: relative;
@@ -11,6 +13,12 @@ li {
 	margin-bottom: 2rem;
 }
 
+hr {
+	margin: 10;
+}
+
+/* CLASSES */
+
 .super-container {
 	font-family: 'Merriweather', serif;
 	display: block;
@@ -21,15 +29,15 @@ li {
 	margin-bottom: 10rem;
 }
 
-hr {
-	margin: 10;
-}
-
 a.project-title {
 	font-size: 3rem;
 	font-family: 'Indie Flower', cursive;
 	text-decoration: none;
 	color: lightblue;
+}
+
+a.project-title.active {
+	color: rgb(0, 255, 255);
 }
 
 a.project-title:hover {
@@ -121,15 +129,22 @@ a.project-title:hover {
 	border: 1px solid lightgrey;
 }
 
-/* .project-list {
+.project-list {
 	text-align: center;
 	align-content: center;
 	justify-content: center;
-} */
+}
 
 .mobile-project {
 	display: none;
 }
+
+.gitLink {
+	font-size: 4.5rem;
+	color: rgb(0, 0, 0);
+}
+
+/* ID SELECTORS */
 
 .row#projects-page {
 	display: flex;
@@ -152,9 +167,17 @@ a.project-title:hover {
 }
 
 #project-name {
-	text-decoration: underline;
+	text-decoration: none;
 	color: rgb(2, 51, 97);
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
 }
+
+#status {
+	text-align: center;
+}
+
+/* MOBILE - VIEW */
 
 @media (max-width: 400px) {
 	hr {
@@ -169,12 +192,17 @@ a.project-title:hover {
 		display: none;
 	}
 
+	.project-about {
+		margin-top: 5rem;
+	}
+
 	.project-box {
 		margin-bottom: 5rem;
+		height: 20vh;
 	}
 
 	.project-title {
-		margin-top: 5rem;
+		margin-top: 2rem;
 	}
 
 	.navbar-links {
@@ -187,6 +215,10 @@ a.project-title:hover {
 		justify-content: center;
 	}
 
+	.content h3 {
+		margin-top: 2rem;
+	}
+
 	.mobile-menu {
 		display: none;
 	}
@@ -196,9 +228,12 @@ a.project-title:hover {
 	}
 
 	#portrait {
+		margin-top: 2rem;
 		width: 100%;
 	}
 }
+
+/* ANIMATIONS */
 
 .fade-in {
 	animation: fadeIn 1.5s ease-in;

@@ -7,6 +7,19 @@
 				<h3>some of my projects</h3>
 			</div>
 		</div>
+		<% if (foundProject.Completed) { %>
+		<div class="project-title" id="project-name">
+			<h4 style="color: green" ;}><%= foundProject.Title %></h4>
+		</div>
+		<% } else { %>
+		<div class="project-title" id="project-name">
+			<h4 style="color: red" ;}><%= foundProject.Title %></h4>
+		</div>
+		<% } %>
+		<p id="status">
+			<span style="color: green">Completed</span> ||
+			<span style="color: red">In Progress</span>
+		</p>
 		<div class="row" id="projects-page">
 			<div class="five columns" id="project-display">
 				<div class="project-box">
@@ -26,22 +39,22 @@
 					<hr />
 				</div>
 				<div class="content">
-					<div class="project-title" id="project-name">
-						<h4><%= foundProject.Title %></h4>
-					</div>
 					<div class="project-about">
 						<h5>About this project</h5>
 						<p>
 							<%= foundProject.About%>
 						</p>
+						<a class="gitLink" href="<%=foundProject.github%>" target="_blank">
+							<i class="fab fa-github-alt"></i>
+						</a>
 					</div>
-					<div class="project difficulties">
+					<div class="project-difficulties">
 						<h5>Difficulties</h5>
 						<p>
 							<%= foundProject.Difficulties %>
 						</p>
 					</div>
-					<div class="project difficulties">
+					<div class="technologies">
 						<h5>Technologies Used</h5>
 						<p>
 							<%=foundProject.Technologies%>
