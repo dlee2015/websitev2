@@ -9,7 +9,8 @@ const ProjectSchema = new Schema({
 	About: String,
 	Difficulties: String,
 	Technologies: String,
-	Completed: Boolean
+	Completed: Boolean,
+	github: String
 });
 
 module.exports = Projects = mongoose.model('Projects', ProjectSchema);
