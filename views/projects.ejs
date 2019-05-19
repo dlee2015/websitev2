@@ -10,32 +10,14 @@
 		<div class="row" id="projects-page">
 			<div class="five columns" id="project-display">
 				<div class="project-box">
-					<ul class="project-list">
-						<a
-							class="project-title"
-							href="https://www.github.com/dlee2015/website"
-							>Website v1</a
+					<div class="project-list">
+						<% projects.forEach((project) => { %>
+						<a class="project-title" href="/projects/<%=project.Url%>"
+							><%= project.Title %></a
 						>
-						<p class="project-shortdesc">
-							First website I published to the internet
-						</p>
-						<a
-							class="project-title"
-							href="https://www.github.com/dlee2015/website"
-							>Website v2</a
-						>
-						<p class="project-shortdesc">
-							Second website, redesigned with new routing
-						</p>
-						<a
-							class="project-title"
-							href="https://www.github.com/dlee2015/website"
-							>Burger Menu</a
-						>
-						<p class="project-shortdesc">
-							Very first React App
-						</p>
-					</ul>
+						<p class="project-shortdesc"><%= project.Short %></p>
+						<% }) %>
+					</div>
 				</div>
 			</div>
 
@@ -43,32 +25,7 @@
 				<div class="mobile-project">
 					<hr />
 				</div>
-				<div class="content">
-					<div class="project-title" id="project-name">
-						<h4>Title of Project</h4>
-					</div>
-					<div class="project-about">
-						<h5>About this project</h5>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-							molestias omnis, maiores quisquam rem fuga.
-						</p>
-					</div>
-					<div class="project difficulties">
-						<h5>Difficulties</h5>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-							molestias omnis, maiores quisquam rem fuga.
-						</p>
-					</div>
-					<div class="project difficulties">
-						<h5>Technologies Used</h5>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-							molestias omnis, maiores quisquam rem fuga.
-						</p>
-					</div>
-				</div>
+				<div class="content"></div>
 			</div>
 		</div>
 		<div class="row"></div>

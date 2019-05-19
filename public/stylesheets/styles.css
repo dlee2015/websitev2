@@ -116,7 +116,7 @@ a.project-title:hover {
 }
 
 .project-box {
-	height: 35vh;
+	height: 45vh;
 	overflow: auto;
 	border: 1px solid lightgrey;
 }
@@ -167,6 +167,14 @@ a.project-title:hover {
 
 	.navbar {
 		display: none;
+	}
+
+	.project-box {
+		margin-bottom: 5rem;
+	}
+
+	.project-title {
+		margin-top: 5rem;
 	}
 
 	.navbar-links {

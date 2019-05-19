@@ -14,21 +14,29 @@ mongoose
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-const newProject = {
-	Title: 'Hello World',
-	About: 'Bello World'
-};
-
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
 	res.render('index');
 });
 
-app.get('/about', function(req, res) {
+app.get('/about', (req, res) => {
 	res.render('about');
 });
 
-app.get('/projects', function(req, res) {
-	res.render('projects');
+app.get('/projects', async (req, res) => {
+	let allProjects = await Projects.find();
+
+	res.render('projects', {
+		projects: allProjects
+	});
+});
+
+app.get('/projects/:url', async (req, res) => {
+	let foundProject = await Projects.findOne({ Url: req.params.url });
+
+	res.render('show', {
+		foundProject: foundProject,
+		projectList: await Projects.find()
+	});
 });
 
 app.listen(process.env.PORT || 4000);

@@ -4,6 +4,8 @@ const Schema = mongoose.Schema;
 
 const ProjectSchema = new Schema({
 	Title: String,
+	Short: String,
+	Url: String,
 	About: String,
 	Difficulties: String,
 	Technologies: String,

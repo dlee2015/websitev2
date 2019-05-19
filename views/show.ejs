@@ -1,0 +1,57 @@
+<% include ./partials/header %>
+
+<div class="fade-in">
+	<div class="container">
+		<div class="row">
+			<div class="content">
+				<h3>some of my projects</h3>
+			</div>
+		</div>
+		<div class="row" id="projects-page">
+			<div class="five columns" id="project-display">
+				<div class="project-box">
+					<div class="project-list">
+						<% projectList.forEach((projects) => { %>
+						<a class="project-title" href="/projects/<%=projects.Url%>"
+							><%= projects.Title %></a
+						>
+						<p class="project-shortdesc"><%= projects.Short %></p>
+						<% }) %>
+					</div>
+				</div>
+			</div>
+
+			<div class="seven columns">
+				<div class="mobile-project">
+					<hr />
+				</div>
+				<div class="content">
+					<div class="project-title" id="project-name">
+						<h4><%= foundProject.Title %></h4>
+					</div>
+					<div class="project-about">
+						<h5>About this project</h5>
+						<p>
+							<%= foundProject.About%>
+						</p>
+					</div>
+					<div class="project difficulties">
+						<h5>Difficulties</h5>
+						<p>
+							<%= foundProject.Difficulties %>
+						</p>
+					</div>
+					<div class="project difficulties">
+						<h5>Technologies Used</h5>
+						<p>
+							<%=foundProject.Technologies%>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row"></div>
+	</div>
+</div>
+
+<% include ./partials/footer %>
