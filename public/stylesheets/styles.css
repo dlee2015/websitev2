@@ -173,23 +173,19 @@ a.project-title:hover {
 	font-family: 'Indie Flower', cursive;
 }
 
+#mobile-menu {
+	display: none;
+}
+
 #status {
 	text-align: center;
 }
 
 /* MOBILE - VIEW */
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 	hr {
 		margin: 0;
-	}
-
-	.mobile-project {
-		display: inline;
-	}
-
-	.navbar {
-		display: none;
 	}
 
 	.project-about {
@@ -198,17 +194,12 @@ a.project-title:hover {
 
 	.project-box {
 		margin-bottom: 5rem;
-		height: 20vh;
 	}
 
 	.project-title {
 		margin-top: 2rem;
 	}
 
-	.navbar-links {
-		display: flex;
-		justify-content: flex-end;
-	}
 	.row#projects-page {
 		display: flex;
 		flex-direction: column;
@@ -219,17 +210,73 @@ a.project-title:hover {
 		margin-top: 2rem;
 	}
 
-	.mobile-menu {
+	.navbar {
 		display: none;
+		position: fixed;
 	}
 
-	#navbar-mobile {
+	.navbar-brand {
+		margin-left: 2rem;
+	}
+
+	.sidebar {
+		position: fixed;
+		top: 0;
+		left: -35vw;
+		width: 35vw;
+		height: 100vh;
+		transition: 0.5s;
+		padding: 20px;
+		text-align: center;
+		box-sizing: border-box;
+		background: lightgrey;
+		z-index: 200;
+	}
+	.sidebar.active {
+		left: 0;
+	}
+
+	.sidebar .menu {
+		margin: 0;
+		padding: 2rem 0;
+	}
+
+	.sidebar .menu li {
+		list-style: none;
+	}
+
+	.sidebar .menu li a {
 		display: block;
+		padding: 1rem 0;
+	}
+
+	.socials {
+		bottom: 40px;
+		display: flex;
+		width: 100%;
+		box-sizing: border-box;
+		justify-content: space-around;
+	}
+
+	#burger.active {
+		color: orange;
 	}
 
 	#portrait {
 		margin-top: 2rem;
 		width: 100%;
+	}
+
+	#mobile-menu {
+		display: block;
+		font-family: 'Indie Flower', cursive;
+		font-size: 2rem;
+	}
+
+	#menu-button {
+		display: flex;
+		justify-content: flex-end;
+		margin: 2rem;
 	}
 }
 
