@@ -4,10 +4,10 @@ const express = require('express'),
 	mongoose = require('mongoose'),
 	Projects = require('./models/Projects');
 
-const db = require('./config/keys').mongoURI;
+require('dotenv').config();
 
 mongoose
-	.connect(db, { useNewUrlParser: true })
+	.connect(process.env.DB_KEY, { useNewUrlParser: true })
 	.then(() => console.log('DB Has connected'))
 	.catch(err => console.log(err));
 
