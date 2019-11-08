@@ -13,7 +13,7 @@
     "dotenv": "^8.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mongoose": "^5.5.9",
+    "mongoose": "^5.7.5",
     "nodemon": "^1.19.0",
     "view-engine": "^1.1.1"
   }
